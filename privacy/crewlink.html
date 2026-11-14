@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CrewLink — Chính sách quyền riêng tư</title>
+<style>
+  :root { color-scheme: light dark; --ink: #16181d; --dim: #5b6372; --line: #d9dde4; --bg: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e8eaee; --dim: #a0a8b6; --line: #2b3038; --bg: #121419; } }
+  body { background: var(--bg); color: var(--ink); margin: 0 auto; padding: 32px 16px 72px; max-width: 46rem;
+         font: 16px/1.65 -apple-system, "Segoe UI", Roboto, system-ui, sans-serif; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; }
+  p, li { margin: 8px 0; }
+  .sub { color: var(--dim); margin: 0 0 24px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: color-mix(in srgb, var(--ink) 8%, transparent); padding: 1px 5px; border-radius: 4px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 24px; }
+  .en { color: var(--dim); }
+</style>
+</head>
+<body>
+
+<h1>Chính sách quyền riêng tư — CrewLink</h1>
+<p class="sub">Áp dụng cho ứng dụng <code>com.vinhthaipham.crewlink</code> trên Android và iOS. Cập nhật: 14/11/2026.</p>
+
+<p>CrewLink là ứng dụng đi theo nhóm: các thành viên thấy nhau trên bản đồ, nói chuyện với nhau và được báo khi có người tụt lại hoặc gặp sự cố. Ứng dụng do cá nhân Phạm Vĩnh Thái làm và phát hành. Liên hệ: <a href="mailto:vinhthaipham@gmail.com">vinhthaipham@gmail.com</a>.</p>
+
+<h2>1. Không có tài khoản</h2>
+<p>CrewLink không có đăng ký, không có đăng nhập. Chúng tôi không thu thập tên, số điện thoại, email hay danh bạ của bạn. Tên hiển thị trong nhóm là tên bạn tự đặt trên máy mình và chỉ gửi cho các thành viên cùng nhóm.</p>
+
+<h2>2. Dữ liệu nằm trên máy bạn</h2>
+<p>Những thứ sau được lưu trong bộ nhớ riêng của ứng dụng trên máy bạn và không được gửi đến máy chủ nào của chúng tôi:</p>
+<ul>
+  <li>cài đặt, tên hiển thị, các nhóm đã lưu và mã nhóm;</li>
+  <li>tuyến đường, điểm ghim, tệp GPX bạn nhập, bản đồ tải về để dùng khi không có mạng;</li>
+  <li>nhật ký chuyến đi của chính bạn.</li>
+</ul>
+<p>Gỡ ứng dụng là xoá hết những thứ này. Một nhóm tự hết hạn sau 12 tiếng không hoạt động.</p>
+
+<h2>3. Dữ liệu chia cho nhóm</h2>
+<p>Khi bạn ở trong một nhóm, máy bạn gửi cho <strong>các thành viên của nhóm đó</strong>: vị trí và hướng đi, tốc độ, trạng thái (đang theo kịp hay tụt lại), tin nhắn chữ, tin thoại và đàm thoại, tuyến đường bạn chia sẻ, cảnh báo ngã hoặc kêu cứu, và hình từ camera nếu bạn bật chia hình đường cho nhóm.</p>
+<p>Mọi gói tin đều được <strong>mã hoá đầu-cuối bằng khoá của nhóm</strong> (AES-256-GCM); chỉ máy có mã nhóm mới đọc được. Khi hai máy không nối thẳng được với nhau, gói tin đi qua máy chủ chuyển tiếp của chúng tôi — máy chủ đó chỉ thấy <em>bản đã mã hoá</em> và địa chỉ mạng, không đọc được nội dung và không lưu lại. Chúng tôi không giữ vị trí, tin nhắn, giọng nói hay hình ảnh của bạn trên máy chủ.</p>
+<p>CrewLink <strong>không có camera hành trình</strong>: camera chỉ phát hình trực tiếp cho nhóm khi bạn bật, không ghi thành video, không nhận diện biển số, biển báo hay khuôn mặt.</p>
+
+<h2>4. Dịch vụ bên ngoài mà ứng dụng gọi tới</h2>
+<table>
+  <tr><th>Dịch vụ</th><th>Để làm gì</th><th>Họ nhận được gì</th></tr>
+  <tr><td>OpenFreeMap</td><td>ảnh nền bản đồ</td><td>địa chỉ IP, vùng bản đồ đang xem</td></tr>
+  <tr><td>routing.openstreetmap.de (OSRM)</td><td>tính đường đi</td><td>địa chỉ IP, điểm đầu và điểm cuối</td></tr>
+  <tr><td>Nominatim (OpenStreetMap)</td><td>tìm địa điểm theo tên, tra tên chỗ đang đứng</td><td>địa chỉ IP, từ khoá và toạ độ hỏi</td></tr>
+  <tr><td>Overpass API</td><td>thông tin địa điểm quanh điểm ghim</td><td>địa chỉ IP, toạ độ hỏi</td></tr>
+  <tr><td>Open-Meteo, Terrain Tiles (AWS)</td><td>độ cao địa hình cho đường đi bộ</td><td>địa chỉ IP, toạ độ hỏi</td></tr>
+  <tr><td>Máy chủ của chúng tôi (<code>z4.taila0f5ef.ts.net</code>)</td><td>chuyển tiếp gói tin đã mã hoá; kiểm tra bản ứng dụng còn được dùng hay không</td><td>địa chỉ IP, số hiệu bản ứng dụng</td></tr>
+</table>
+<p>Chúng tôi không gửi cho họ tên bạn, mã nhóm hay nội dung gì của nhóm. Các dịch vụ này có chính sách riêng của họ.</p>
+
+<h2>5. Quyền ứng dụng xin</h2>
+<ul>
+  <li><strong>Vị trí (kể cả khi chạy nền)</strong> — vẽ vị trí bạn trên bản đồ của nhóm, dẫn đường và phát hiện tụt lại; cần chạy nền vì màn hình thường tắt khi đang đi.</li>
+  <li><strong>Micro</strong> — đàm thoại và tin thoại trong nhóm. Chỉ bật khi bạn nói; không ghi âm nền.</li>
+  <li><strong>Camera</strong> — chia hình đường cho nhóm khi bạn bật. Không ghi.</li>
+  <li><strong>Bluetooth và thiết bị ở gần, Wi-Fi</strong> — nối thẳng máy trong nhóm khi không có sóng di động.</li>
+  <li><strong>Thông báo</strong> — báo khi có người tụt lại, ngã, hay có tin trong nhóm.</li>
+  <li><strong>Cảm biến chuyển động</strong> — phát hiện va chạm và ngã xe.</li>
+</ul>
+<p>Bạn có thể từ chối hoặc thu lại từng quyền trong cài đặt hệ thống; phần nào dùng quyền đó sẽ ngừng hoạt động, phần còn lại vẫn chạy.</p>
+
+<h2>6. Những điều chúng tôi không làm</h2>
+<p>Không quảng cáo. Không công cụ theo dõi hay đo đếm hành vi của bên thứ ba. Không bán, không chia sẻ dữ liệu của bạn cho bất kỳ ai. Không hồ sơ người dùng.</p>
+
+<h2>7. Trẻ em</h2>
+<p>Ứng dụng không nhắm tới trẻ em dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em.</p>
+
+<h2>8. Xoá dữ liệu</h2>
+<p>Vì không có tài khoản và không có dữ liệu của bạn trên máy chủ, cách xoá là gỡ ứng dụng khỏi máy. Nếu bạn muốn hỏi thêm, viết thư tới <a href="mailto:vinhthaipham@gmail.com">vinhthaipham@gmail.com</a>.</p>
+
+<h2>9. Thay đổi</h2>
+<p>Khi chính sách thay đổi, trang này được cập nhật và ngày ở đầu trang đổi theo.</p>
+
+<hr>
+
+<div class="en">
+<h2>English summary</h2>
+<p>CrewLink is a group travel app published by Pham Vinh Thai (<a href="mailto:vinhthaipham@gmail.com">vinhthaipham@gmail.com</a>). It has no accounts and collects no personal details. Settings, saved groups, routes and offline maps stay on your device. Location, status, messages, voice and the optional live camera view are shared only with members of your group and are end-to-end encrypted with the group key (AES-256-GCM); when phones cannot reach each other directly, packets pass through our relay, which sees only ciphertext and network addresses and stores nothing. CrewLink has no dashcam: the camera is a live view for the group, never recorded, and nothing in the picture is recognised. Map tiles, routing, place search, elevation and our own version check are fetched from the services listed above, which receive your IP address and the coordinates queried. No ads, no analytics, no tracking, no data sold. Uninstalling the app removes everything it keeps. Last updated 14 November 2026.</p>
+</div>
+
+</body>
+</html>
