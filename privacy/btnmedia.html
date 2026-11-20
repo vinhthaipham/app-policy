@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BTN Media — Chính sách quyền riêng tư</title>
+<style>
+  :root { color-scheme: light dark; --ink: #16181d; --dim: #5b6372; --line: #d9dde4; --bg: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e8eaee; --dim: #a0a8b6; --line: #2b3038; --bg: #121419; } }
+  body { background: var(--bg); color: var(--ink); margin: 0 auto; padding: 32px 16px 72px; max-width: 46rem;
+         font: 16px/1.65 -apple-system, "Segoe UI", Roboto, system-ui, sans-serif; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; }
+  p, li { margin: 8px 0; }
+  .sub { color: var(--dim); margin: 0 0 24px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: color-mix(in srgb, var(--ink) 8%, transparent); padding: 1px 5px; border-radius: 4px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 24px; }
+  .en { color: var(--dim); }
+</style>
+</head>
+<body>
+
+<h1>Chính sách quyền riêng tư — BTN Media</h1>
+<p class="sub">Áp dụng cho ứng dụng <code>com.vinhthaipham.btnmedia</code> (iOS) và <code>com.btnmedia.app</code> (Android). Cập nhật: 20/11/2026.</p>
+
+<p>BTN Media là ứng dụng đọc và ghi chú: đọc sách EPUB và PDF, viết sổ tay bằng nét tay, ghi chú bằng giọng nói, và để một mô hình nhìn chữ — trên máy bạn hoặc trên máy chủ của chúng tôi — đọc nét tay và ảnh cho bạn. Ứng dụng do cá nhân Phạm Vĩnh Thái làm và phát hành. Liên hệ: <a href="mailto:vinhthaipham@gmail.com">vinhthaipham@gmail.com</a>.</p>
+
+<h2>1. Không có tài khoản</h2>
+<p>BTN Media không có đăng ký, không có đăng nhập. Chúng tôi không thu thập tên, số điện thoại, email hay danh bạ của bạn. Mọi thứ bạn đọc và viết không gắn với một danh tính nào.</p>
+
+<h2>2. Dữ liệu nằm trên máy bạn</h2>
+<p>Những thứ sau được lưu trong bộ nhớ riêng của ứng dụng trên máy bạn và không được gửi đi nơi nào:</p>
+<ul>
+  <li>sách EPUB, PDF, tệp tài liệu và tiến độ đọc của bạn;</li>
+  <li>sổ tay: các trang bạn viết, nét tay của bạn, chữ máy đã đọc;</li>
+  <li>ghi chú giọng nói và chữ của chúng;</li>
+  <li>thư mục Bảo mật — mã hoá bằng AES-256-GCM với khoá của chính máy bạn, mở bằng khoá máy;</li>
+  <li>mô hình nhìn ảnh (LFM3-Omni, tải về từ Hugging Face khi bạn bấm nút) và giọng nói đọc sách đã tải;</li>
+  <li>các mẫu nét chữ của bạn mà ứng dụng học để đọc nét tay của bạn chính xác hơn.</li>
+</ul>
+<p>Gỡ ứng dụng là xoá hết những thứ này.</p>
+
+<h2>3. Điều gì ra khỏi máy bạn</h2>
+<p>BTN Media hoạt động được khi không có mạng. Có ba trường hợp bạn <strong>bật</strong> việc gửi dữ liệu, và chỉ trong các trường hợp đó:</p>
+<ul>
+  <li><strong>Người đọc «Mô hình» (dùng máy chủ).</strong> Khi bạn chọn người đọc chạy trên máy chủ, trang nét tay hay ảnh chụp bạn đưa cho người đọc được gửi tới máy chủ của chúng tôi (<code>z4.taila0f5ef.ts.net</code>) để đọc; kết quả trả về máy bạn. Bạn chọn «Trên máy» hay «Nét ảnh» thì mọi thứ xử lý ngay trên máy, không có gì được gửi.</li>
+  <li><strong>Ghi chú giọng nói khi máy không đọc được ngôn ngữ đó.</strong> Máy đọc ghi chú trên máy (công cụ của hệ điều hành hoặc mô hình trên máy); chỉ khi máy không có công cụ cho ngôn ngữ của ghi chú, bản ghi âm được gửi tới máy chủ của chúng tôi để đọc thành chữ (Whisper). Bản ghi không được lưu trên máy chủ.</li>
+  <li><strong>Kiểm tra bản ứng dụng.</strong> Ứng dụng thỉnh thoảng hỏi máy chủ của chúng tôi xem bản nó đang chạy có còn được dùng hay không; chỉ số hiệu bản ứng dụng và địa chỉ IP được biết.</li>
+</ul>
+<p>Tải mô hình nhìn ảnh (khoảng 1,5 GB) và giọng nói đọc sách tải từ Hugging Face (huggingface.co): đó là các tệp công khai, không có dữ liệu của bạn được gửi cho họ — chỉ yêu cầu tệp và địa chỉ IP.</p>
+
+<h2>4. Mô hình nhìn ảnh trên máy</h2>
+<p>Mô hình LFM3-Omni chạy hoàn toàn trong bộ nhớ và bộ vi xử lý đồ hoạ của máy bạn. Nét tay, trang giấy hay ảnh bạn đưa cho nó khi chọn «Trên máy» <strong>không rời khỏi máy</strong>. Ứng dụng không nhận diện khuôn mặt và không gửi ảnh đi đâu để phân tích.</p>
+
+<h2>5. Quyền ứng dụng xin</h2>
+<ul>
+  <li><strong>Camera</strong> — chụp trang giấy đưa vào sổ tay, và chế độ đọc to từ camera.</li>
+  <li><strong>Micro</strong> — ghi chú giọng nói. Chỉ ghi khi bạn bấm ghi; không ghi âm nền.</li>
+  <li><strong>Tệp</strong> — đọc sách và tài liệu từ bộ nhớ máy, tải sách về.</li>
+  <li><strong>Thông báo</strong> — các cảnh báo và lời nhắc của ứng dụng.</li>
+  <li><strong>Khoá của máy (Face ID / vân tay)</strong> — mở và khoá thư mục Bảo mật.</li>
+</ul>
+<p>Bạn có thể từ chối hoặc thu lại từng quyền trong cài đặt hệ thống; phần nào dùng quyền đó sẽ ngừng hoạt động, phần còn lại vẫn chạy.</p>
+
+<h2>6. Những điều chúng tôi không làm</h2>
+<p>Không quảng cáo. Không công cụ theo dõi hay đo đếm hành vi của bên thứ ba. Không bán, không chia sẻ dữ liệu của bạn cho bất kỳ ai. Không hồ sơ người dùng. Máy chủ của chúng tôi không lưu sách, nét tay, ghi chú, hay giọng nói của bạn.</p>
+
+<h2>7. Trẻ em</h2>
+<p>Ứng dụng không nhắm tới trẻ em dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em.</p>
+
+<h2>8. Xoá dữ liệu</h2>
+<p>Vì không có tài khoản và không có dữ liệu của bạn trên máy chủ, cách xoá là gỡ ứng dụng khỏi máy; sách, sổ tay, ghi chú và mô hình đã tải đi theo. Nếu bạn muốn hỏi thêm, viết thư tới <a href="mailto:vinhthaipham@gmail.com">vinhthaipham@gmail.com</a>.</p>
+
+<h2>9. Thay đổi</h2>
+<p>Khi chính sách thay đổi, trang này được cập nhật và ngày ở đầu trang đổi theo.</p>
+
+<hr>
+
+<div class="en">
+<h2>English summary</h2>
+<p>BTN Media is a reading and note-taking app published by Pham Vinh Thai (<a href="mailto:vinhthaipham@gmail.com">vinhthaipham@gmail.com</a>). It has no accounts and collects no personal details. Your books, notebook, voice notes, settings and downloaded models live only on your device; the private folder is encrypted on your phone with a key held by the phone itself (AES-256-GCM). The app works offline. Data leaves your phone only when you choose it: the “model” reader sends the handwriting or photo you point at it to our server for reading; a voice note is sent to our server (Whisper) only when the phone has no recognition engine for its language, and is not stored there; and a periodic version check tells our server the app’s build number and IP. The on-phone vision model (LFM3-Omni) runs entirely on your device — what you show it never leaves it. There is no face recognition. Models and voices download from Hugging Face, a public file host, which sees the file request and your IP only. No ads, no analytics, no tracking, no data sold. Our server keeps none of your books, notes, handwriting or voice. Uninstalling the app removes everything it keeps. Last updated 20 November 2026.</p>
+</div>
+
+</body>
+</html>
